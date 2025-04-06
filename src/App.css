@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+nav {
+    background-image: url(/src/assets/movie.jpg);
+}
