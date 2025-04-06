@@ -8,7 +8,7 @@ export default function WishlistContent({ removeMovie, wishListMovies }) {
                 <div className="flex flex-col items-center h-186 justify-center gap-2">
                     <p className="text-[18px] text-[#DFDDDD] font-[700]">Your watchlist is looking a little empty...</p>
                     <div className="flex items-center justify-center gap-1">
-                        <img src="/src/assets/add.svg" alt="" />
+                        <img src="/add.svg" alt="" />
                         <h3 className="font-[700] text-[14px] text-[#363636]">Let's add some movies!</h3>
                     </div>
                 </div>
@@ -24,14 +24,14 @@ export default function WishlistContent({ removeMovie, wishListMovies }) {
                                 <div className="w-9/12 flex flex-col justify-center gap-2">
                                     <div className="flex items-center gap-2">
                                         <h2 className="text-[18px] font-[500] text-[#000000] line-clamp-1">{movie.title}</h2>
-                                        <img src="/src/assets/star.svg" alt="" />
+                                        <img src="/star.svg" alt="" />
                                         <span className="text-[12px] font-[400] text-[#111827]">{movie.vote_average}</span>
                                     </div>
                                     <div className="text-[12px] font-[400] flex gap-4 text-[#111827] ">
                                         <span className="">117 min</span>
                                         <span>Action, Drama, Sci-fi</span>
                                         <div  className="flex gap-1" onClick={() => removeMovie(movie)}>
-                                            <img className="w-[16px] h-[16px]" src="/src/assets/remove.svg" alt="" />
+                                            <img className="w-[16px] h-[16px]" src="/remove.svg" alt="" />
                                             <span>Remove</span>
                                         </div>
                                     </div>

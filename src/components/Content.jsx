@@ -51,7 +51,7 @@ export default function Content({ addMovie }) {
                         value={query}
                     />
                     <button type="submit" onClick={fetchMovies} className="bg-gray-200 text-[#374151] text-sm/5 font-medium w-3/12 h-[50px]">Search</button>
-                    <img className="absolute top-[17px] left-3" src="/src/assets/Icon.svg" alt="" />
+                    <img className="absolute top-[17px] left-3" src="/Icon.svg" alt="" />
                 </form>
             </div>
             {
@@ -71,14 +71,14 @@ export default function Content({ addMovie }) {
                                         <div className="w-9/12 flex flex-col justify-center gap-2">
                                             <div className="flex items-center gap-2">
                                                 <h2 className="text-[18px] font-[500] text-[#000000] line-clamp-1">{movie.title}</h2>
-                                                <img src="/src/assets/star.svg" alt="" />
+                                                <img src="/star.svg" alt="" />
                                                 <span className="text-[12px] font-[400] text-[#111827]">{movie.vote_average}</span>
                                             </div>
                                             <div className="text-[12px] font-[400] flex gap-4 text-[#111827] ">
                                                 <span className="">117 min</span>
                                                 <span>Action, Drama, Sci-fi</span>
                                                 <div  className="flex gap-1" onClick={() => addMovie(movie)}>
-                                                    <img className="w-[16px] h-[16px] hover:scale-120" src="/src/assets/add.svg" alt="" />
+                                                    <img className="w-[16px] h-[16px] hover:scale-120" src="/add.svg" alt="" />
                                                     <span className="transition-transform duration-300 hover:scale-120">Watchlist</span>
                                                 </div>
                                             </div>
@@ -100,7 +100,7 @@ export default function Content({ addMovie }) {
                     ) : (
                     <div className="flex flex-col items-center h-186 justify-center">
                         <div>
-                            <img className="" src="/src/assets/Icon.png" alt="video icon" />
+                            <img className="" src="/Icon.png" alt="video icon" />
                         </div>
                         <h3 className="font-[700] text-[18px] text-[#DFDDDD]">Start exploring</h3>
                     </div>
