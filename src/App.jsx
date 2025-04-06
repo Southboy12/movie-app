@@ -23,6 +23,10 @@ function App() {
     })    
   }
 
+  function removeMovie(movie) {
+    setWishListMovies((prevMovies) => prevMovies.filter((item) => item.id !== movie.id))
+  }
+
   useEffect(() => {
     //Load movies from local storage on component mount
     const storedMovies = localStorage.getItem("movieslist")
@@ -50,7 +54,7 @@ function App() {
           </Route>
 
           <Route path="wishlist" element={<Wishlist />} >
-            <Route index element={<WishlistContent wishListMovies={wishListMovies} />} />
+            <Route index element={<WishlistContent removeMovie={removeMovie} wishListMovies={wishListMovies} />} />
           </Route>
         </Routes>
       </BrowserRouter>

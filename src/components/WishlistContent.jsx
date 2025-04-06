@@ -1,4 +1,4 @@
-export default function WishlistContent({ wishListMovies }) {    
+export default function WishlistContent({ removeMovie, wishListMovies }) {    
     console.log(wishListMovies.length);
     
 
@@ -30,7 +30,7 @@ export default function WishlistContent({ wishListMovies }) {
                                     <div className="text-[12px] font-[400] flex gap-4 text-[#111827] ">
                                         <span className="">117 min</span>
                                         <span>Action, Drama, Sci-fi</span>
-                                        <div  className="flex gap-1">
+                                        <div  className="flex gap-1" onClick={() => removeMovie(movie)}>
                                             <img className="w-[16px] h-[16px]" src="/src/assets/remove.svg" alt="" />
                                             <span>Remove</span>
                                         </div>
